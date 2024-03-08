@@ -4,8 +4,8 @@
     "nodemon": "^3.1.0"
   },
   "scripts": {
-    "dev": "nodemon ./crudCar.js",
-    "script": "node src/crudCar.js"
+    "dev": "nodemon ./crud.js",
+    "script": "node src/crud.js"
    }
 
 }
