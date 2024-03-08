@@ -26,7 +26,7 @@ app.put('/car/:id', async (req, res) => {
 });
 app.delete('/car/:id', async (req, res) => {
     console.log('PUT DELETE');
-    res.status(200).send( await dbFunction.update(  req.params.id ) );
+    res.status(200).send( await dbFunction.del(  req.params.id ) );
     
 });
 app.listen(3002, () => {
