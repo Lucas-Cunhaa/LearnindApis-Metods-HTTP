@@ -7,8 +7,8 @@ let users = [];
 
 app.get('/user', (req, res) => {
     
-        console.log('GET METHOD');
-        res.status(200).send({"users" : users}); 
+    console.log('GET METHOD');
+    res.status(200).send(users); 
        
 });
 
@@ -17,7 +17,7 @@ app.post('/user', (req, res) => {
     console.log('POST METHOD');
     const user =  req.body;
     users.push(user);
-    res.status(200).send({"users" : user});
+    res.status(200).send(user);
    
 });
 
@@ -47,7 +47,7 @@ app.delete('/user/:id',  (req, res) => {
     res.status(200).send(users);
    } catch (error) {
     console.log(error.message)
-    res.status(400).send(error)
+    res.status(400).send('error')
    }
  })
 

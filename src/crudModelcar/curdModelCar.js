@@ -31,6 +31,6 @@ app.delete('/car/:id', async (req, res) => {
 });
 app.listen(3002, () => {
     console.log('SERVER ON');
-})
+});
 
 
